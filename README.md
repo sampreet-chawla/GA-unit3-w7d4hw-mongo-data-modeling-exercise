@@ -18,8 +18,7 @@ structure based on the documents inside of them.
 2. Change into the new directory.
 3. Fulfill the listed requirements.
 
-Starter code is available in the `data-sets` directory. You are required to turn
-in your submission by making a pull request on the original repository.
+Starter code is available in the `data-sets` directory. 
 
 
 ## Requirements
