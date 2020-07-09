@@ -63,9 +63,7 @@ const Person = new Schema({
 module.exports = mongoose.model("Person", Person);
 ```
 
-For the examples that require parent and child schemas, use the Author and
-Cookbook solution that we learning in class as a reference! Hint: An array of
-objects will be a clue!
+For the examples that require parent and child schemas, use the Yum lab for reference.
 
 ## Plagiarism
 
