@@ -63,8 +63,6 @@ const Person = new Schema({
 module.exports = mongoose.model("Person", Person);
 ```
 
-For the examples that require parent and child schemas, use the Yum lab for reference.
-
 ## Plagiarism
 
 Take a moment to refamiliarize yourself with the
