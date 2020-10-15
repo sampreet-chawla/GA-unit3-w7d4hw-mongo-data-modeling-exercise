@@ -20,7 +20,6 @@ structure based on the documents inside of them.
 
 Starter code is available in the `data-sets` directory. 
 
-
 ## Requirements
 
 In the `data-sets` directory, you'll find a few subdirectories. Each of these
@@ -34,34 +33,23 @@ create a file representing each model that includes:
 - Appropriate data types for each property
 - Export schema using `module.exports`
 
-For example, for the data set:
+### DB Connection
 
-```js
-[
-  {
-    name: "Erin",
-    hometown: "Villanova, PA",
-    "years-in-dc": 8,
-    "loves-to-code": true
-  }
-];
-```
+Setup the `connection` to the db which connects to a your db and all other supporting code. 
 
-Your model file (named `Person.js` or something else semantic, should look like
-this:
+### Models
+Create a `models/` directory, and create the schemas/model for the data using the structure of the objects based on the dataset. 
 
-```js
-const Schema = mongoose.Schema;
+### Seeding Data
 
-const Person = new Schema({
-  name: String,
-  hometown: String,
-  "years-in-dc": Number,
-  "loves-to-code": Boolean
-});
+Seed the database and update `package.json` to include a new `db:seed` startup script for each seed file.
 
-module.exports = mongoose.model("Person", Person);
-```
+### Controllers 
+
+Create a `controllers` directory and a separate file for each controller. Write a function for each of the following to add CRUD functionality. 
+
+Here is what the controller functions should be named regardless of the dataset.  You are not responsible for creating the routes only the DB and Controller side of the app.  You must use the method named defined below. 
+
 
 | Route | Method | Controller | Response         |
 | ------ | ------ | --------- | ---------------- |
