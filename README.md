@@ -64,7 +64,7 @@ module.exports = mongoose.model("Person", Person);
 ```
 
 | Route | Method | Controller | Response         |
-| ------ | ------ | --------- | ---- | ---------------- |
+| ------ | ------ | --------- | ---------------- |
 | /person | GET    | index()     | Array of all objects |
 | /person  | POST   | create()    | The object that was created   |
 | /person/:id | GET    | show() |  A single object          |
