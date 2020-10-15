@@ -63,6 +63,14 @@ const Person = new Schema({
 module.exports = mongoose.model("Person", Person);
 ```
 
+| Route | Method | Controller | Response         |
+| ------ | ------ | --------- | ---- | ---------------- |
+| /person | GET    | index()     | Array of all objects |
+| /person  | POST   | create()    | The object that was created   |
+| /person/:id | GET    | show() |  A single object          |
+| /person/:id  | DELETE | delete() | Confirmation the object was deleted   |
+| /person/:id  | PUT    |update() |  The object that was updated   |
+
 ## Plagiarism
 
 Take a moment to refamiliarize yourself with the
