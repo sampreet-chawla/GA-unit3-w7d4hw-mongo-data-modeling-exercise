@@ -13,7 +13,7 @@ const index = () => {
 		.catch((error) => console.log('Errors in index() ', error))
 		.finally(() => db.close());
 };
-//index();
+index();
 
 const create = (penpal) => {
 	const db = mongoose.connection;
@@ -83,9 +83,9 @@ const update = (id, penpal) => {
 		.catch((error) => console.log('Errors in delete() ', error))
 		.finally(() => db.close());
 };
-update('5f891800ef5262752fb1e7e2', {
-	to: 'Donna',
-	from: 'Tom',
-	message: 'Treat Yourself!',
-	sentOn: 'Oct 15, 2019',
-});
+// update('5f891800ef5262752fb1e7e2', {
+// 	to: 'Donna',
+// 	from: 'Tom',
+// 	message: 'Treat Yourself!',
+// 	sentOn: 'Oct 15, 2019',
+// });
