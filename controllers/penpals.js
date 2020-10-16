@@ -80,7 +80,7 @@ const update = (id, penpal) => {
 		.then((penpalUpdated) => {
 			console.log('Updated, new Penpal value: ', penpalUpdated);
 		})
-		.catch((error) => console.log('Errors in delete() ', error))
+		.catch((error) => console.log('Errors in update() ', error))
 		.finally(() => db.close());
 };
 // update('5f891800ef5262752fb1e7e2', {

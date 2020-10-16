@@ -82,7 +82,7 @@ const update = (id, beverage) => {
 		.then((beverageNew) => {
 			console.log('Updated, new Beverage value: ', beverageNew);
 		})
-		.catch((error) => console.log('Errors in delete() ', error))
+		.catch((error) => console.log('Errors in update() ', error))
 		.finally(() => db.close());
 };
 // update('5f8977b7200d850f489648ea', {
