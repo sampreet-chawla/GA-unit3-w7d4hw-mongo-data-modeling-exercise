@@ -13,7 +13,7 @@ const index = () => {
 		.catch((error) => console.log('Errors in index() ', error))
 		.finally(() => db.close());
 };
-// index();
+index();
 
 const create = (beverage) => {
 	const db = mongoose.connection;
@@ -71,22 +71,25 @@ const deleteById = (id) => {
 		.catch((error) => console.log('Errors in delete() ', error))
 		.finally(() => db.close());
 };
-//deleteById('5f89718ab08d9309f0306601');
+//deleteById('5f8977b7200d850f489648ea');
 
 const update = (id, beverage) => {
 	const db = mongoose.connection;
-	Berverages.findByIdAndUpdate({ _id: id }, beverage, { new: true })
+	Berverages.findByIdAndUpdate({ _id: id }, beverage, {
+		new: true,
+		useFindAndModify: false,
+	})
 		.then((beverageNew) => {
 			console.log('Updated, new Beverage value: ', beverageNew);
 		})
 		.catch((error) => console.log('Errors in delete() ', error))
 		.finally(() => db.close());
 };
-update('5f8977b7200d850f489648ea', {
-	'beverage-name': 'Hot-Chocolate',
-	brand: 'Swiss-miss',
-	'beverage-type': 'health-drink',
-	'contains-sugar': false,
-	carbonated: false,
-	container: 'cup',
-});
+// update('5f8977b7200d850f489648ea', {
+// 	'beverage-name': 'Hot-Chocolate',
+// 	brand: 'Swiss-miss',
+// 	'beverage-type': 'health-drink',
+// 	'contains-sugar': false,
+// 	carbonated: false,
+// 	container: 'cup',
+// });
