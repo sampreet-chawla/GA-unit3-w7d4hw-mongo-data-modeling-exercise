@@ -7,7 +7,7 @@ const beveragesSchema = new Schema(
 		brand: { type: String, required: true },
 		'beverage-type': { type: String, required: true },
 		'contains-sugar': { type: Boolean, default: false },
-		carbonated: { type: Boolean, default: true },
+		carbonated: { type: Boolean, default: false },
 		container: { type: String, required: true },
 	},
 	{ timestamps: true }

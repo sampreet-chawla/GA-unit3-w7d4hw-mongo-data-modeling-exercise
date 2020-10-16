@@ -12,6 +12,6 @@ db.on('error', (error) => console.log(`Error connecting with ${mongoURI}`));
 db.on('connected', () => console.log(`Connected with ${mongoURI}`));
 db.on('disconnected', () => console.log(`DB disconnected`));
 
-db.close();
+//db.close();
 
 module.exports = mongoose;
